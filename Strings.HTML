@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><HTML></HTML></title> <link rel="stylesheet" href="main_css.css">  <!-- Joseph Benezario -->
+</head>
+<body>
+    <h1> Strings </h1> <!--Title-->
+    <h2>
+        Navigation links
+    </h2>
+    
+    <nav>
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Games</a><br>
+        <a href="./strings.html">Strings</a><br>
+    </nav>
+<div id="error"> </div>
+    <form action='/' method="Hello">
+<div>
+<label for="name">Name</label>
+<input id="name" name="name" type="text" required>
+</div>
+<div>
+    <label for="Last name">Last Name</label>
+    <input id="last name" name="last name" type="last name" required>
+
+    </div>
+    <div>
+        <label for="zipcode">Zipcode</label>
+        <input id="zipcode" name="zipcode" type="zipcode" required>
+    
+        </div>
+    <button type="submit">Submit</button>
+    </form>
+    <script> 
+    const name = document.getElementById('name')
+    const lastname = document.getElementById('last name')
+    const zipcode = document.getElementById('zipcode')
+    const form = document.getElementById('form')
+    const errorElement = document.getElementById('error')
+    
+    form.addEventListener('submit', (e) => {
+ let messages = [] 
+ if (lastname.value.length >=20) {
+    messages.push('password must be longer than 20 chracters')
+    if( zipcode.value.length<=6){
+        messages.push('zipcode must be 5 characters')
+    }
+    e.preventDefault()
+errorElement.innerText = messages.join(',')
+ } 
+    })
+    </script>
+    <script src="music.jfile">
+    </script>
+    <button class="Music" onclick="playMusic();">
+    Press for Music
+</button>
+<footer>
+    Joseph Benezario<br> 
+    University of Advancing Technology,<br>
+    2625 W Baseline Rd, Tempe, AZ<br>
+    Tempe, AZ 85283<br>
+    </footer>
+</body>
+</html>
